@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 23, 2016 1:00:50 AM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="neu.edu.entity.EducationTable" table="EducationTable" catalog="mydb" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="USER_NAME" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="graduateSchoolName" type="string">
+            <column name="graduateSchoolName" length="45" />
+        </property>
+        <property name="underGraduateSchoolName" type="string">
+            <column name="underGraduateSchoolName" length="45" />
+        </property>
+        <property name="graduateMajor" type="string">
+            <column name="graduateMajor" length="45" />
+        </property>
+        <property name="underGraduateMajor" type="string">
+            <column name="underGraduateMajor" length="45" />
+        </property>
+        <property name="graduateCourses" type="string">
+            <column name="graduateCourses" length="45" />
+        </property>
+        <property name="underGraduateCourses" type="string">
+            <column name="underGraduateCourses" length="45" />
+        </property>
+        <property name="graduatecgpa" type="java.lang.Float">
+            <column name="graduatecgpa" precision="12" scale="0" />
+        </property>
+        <property name="underGraduatecgpa" type="java.lang.Float">
+            <column name="underGraduatecgpa" precision="12" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

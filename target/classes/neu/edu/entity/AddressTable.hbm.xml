@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 23, 2016 1:00:50 AM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="neu.edu.entity.AddressTable" table="AddressTable" catalog="mydb" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="USER_NAME" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="street" type="string">
+            <column name="street" length="45" />
+        </property>
+        <property name="country" type="string">
+            <column name="country" length="45" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="45" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="45" />
+        </property>
+        <property name="zipcode" type="string">
+            <column name="zipcode" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

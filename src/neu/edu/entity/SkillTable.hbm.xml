@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 23, 2016 1:00:50 AM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="neu.edu.entity.SkillTable" table="SkillTable" catalog="mydb" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="USER_NAME" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="skill1" type="string">
+            <column name="skill1" length="45" />
+        </property>
+        <property name="skill1rating" type="java.lang.Integer">
+            <column name="skill1Rating" />
+        </property>
+        <property name="skill2" type="string">
+            <column name="skill2" length="45" />
+        </property>
+        <property name="skill2rating" type="java.lang.Integer">
+            <column name="skill2Rating" />
+        </property>
+        <property name="skill3" type="string">
+            <column name="skill3" length="45" />
+        </property>
+        <property name="skill3rating" type="java.lang.Integer">
+            <column name="skill3Rating" />
+        </property>
+        <property name="skill4" type="string">
+            <column name="skill4" length="45" />
+        </property>
+        <property name="skill4rating" type="java.lang.Integer">
+            <column name="skill4Rating" />
+        </property>
+        <property name="skill5" type="string">
+            <column name="skill5" length="45" />
+        </property>
+        <property name="skill5rating" type="java.lang.Integer">
+            <column name="skill5Rating" />
+        </property>
+    </class>
+</hibernate-mapping>

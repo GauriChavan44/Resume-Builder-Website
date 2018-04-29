@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 23, 2016 1:00:50 AM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="neu.edu.entity.ProjectTable" table="ProjectTable" catalog="mydb" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="USER_NAME" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="project1title" type="string">
+            <column name="project1Title" length="45" />
+        </property>
+        <property name="project1description" type="string">
+            <column name="project1Description" length="45" />
+        </property>
+        <property name="project2title" type="string">
+            <column name="project2Title" length="45" />
+        </property>
+        <property name="project2description" type="string">
+            <column name="project2Description" length="45" />
+        </property>
+        <property name="project3title" type="string">
+            <column name="project3Title" length="45" />
+        </property>
+        <property name="project3description" type="string">
+            <column name="project3Description" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 23, 2016 1:00:50 AM by Hibernate Tools 5.1.0.Alpha1 -->
+<hibernate-mapping>
+    <class name="neu.edu.entity.AboutMeTable" table="AboutMeTable" catalog="mydb" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="USER_NAME" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="aboutMe" type="string">
+            <column name="aboutMe" length="150" />
+        </property>
+    </class>
+</hibernate-mapping>
